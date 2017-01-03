@@ -9,6 +9,7 @@ class Seed
     Category.create!(name: "HIIT")
     Category.create!(name: "Resistance-Arms")
     Category.create!(name: "Resistance-Legs")
+    Category.create!(name: "Resistance-Abs")
     Category.create!(name: "Resistance-Full-Body")
   end
 end
