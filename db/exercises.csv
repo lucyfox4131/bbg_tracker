@@ -1,0 +1,9 @@
+["LISS", "HIIT", "Resistance-Arm", "Resistance-Leg", "Resistance-Full-Body"]
+
+name, category_name
+walk,LISS
+bike,LISS
+elliptical,LISS
+run,HIIT
+bike,HIIT
+elliptical,HIIT
