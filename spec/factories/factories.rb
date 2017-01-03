@@ -1,5 +1,11 @@
 FactoryGirl.define do
   factory :category do
-    name ["LISS", "HIIT", "Resistance-Arms", "Resistance-Legs", "Resistance-Full-Body", "Resistance-Abs"].sample
+    name "LISS"
+  end
+
+  factory :exercise do
+    name "walk"
+    max_weight 0
+    category
   end
 end
