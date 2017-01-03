@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :category do
-    name ["LISS", "HIIT", "Resistance-Arm", "Resistance-Leg", "Resistance-Full-Body"].sample
+    name ["LISS", "HIIT", "Resistance-Arms", "Resistance-Legs", "Resistance-Full-Body", "Resistance-Abs"].sample
   end
 end
