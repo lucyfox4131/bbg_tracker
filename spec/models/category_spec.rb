@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should validate_presence_of(:name) }
+
+  it "should have a name if the factory works" do
+    category = create(:category, name: "LISS")
+    expect(category.name).to eq("LISS")
+  end
 end
