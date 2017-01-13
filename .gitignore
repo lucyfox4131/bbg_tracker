@@ -15,3 +15,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+oauth_stuff.txt
+
+# Ignore application configuration
+/config/application.yml
