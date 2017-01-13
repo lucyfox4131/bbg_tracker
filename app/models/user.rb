@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-
+  has_many :reps
+  
   def self.from_omniauth(auth)
     user = find_or_create_by(uid: auth['uid'], provider: auth['provider'])
     user.name = auth.info.name
