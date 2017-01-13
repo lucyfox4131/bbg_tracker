@@ -11,6 +11,7 @@ RSpec.feature "User Logs in" do
     click_link "Sign in with Google"
 
     expect(page).to have_link("Sign Out")
+    expect(current_path).to eq(dashboard_path)
 
     click_link "Sign Out"
     expect(current_path).to eq(root_path)
