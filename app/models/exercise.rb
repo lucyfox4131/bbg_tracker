@@ -1,5 +1,6 @@
 class Exercise < ApplicationRecord
-  validates :name, presence: true
   belongs_to :category
   has_many :reps
+  has_many :users, through: :reps
+  validates :name, presence: true
 end
