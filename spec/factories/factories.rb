@@ -16,4 +16,15 @@ FactoryGirl.define do
     max_weight 0
     category
   end
+
+  factory :workout do
+    guide 1
+    week 1
+    type "resistance"
+  end
+
+  factory :workout_exercise do
+    exercise
+    workout
+  end
 end
