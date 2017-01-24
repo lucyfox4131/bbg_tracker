@@ -17,6 +17,8 @@ gem 'jbuilder', '~> 2.5'
 gem "omniauth-google-oauth2"
 gem 'rails_12factor', group: :production
 gem "figaro"
+gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'sass-rails', '>= 3.2'
 
 group :development, :test do
   gem 'byebug', platform: :mri
