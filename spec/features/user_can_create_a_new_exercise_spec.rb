@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.feature "Logged in User" do
   scenario "can create a new exercise" do
     user = create(:user, name: "Lucy")
+    exercise = create(:exercise, name: "Walk")
 
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return( user )
 
@@ -13,6 +14,11 @@ RSpec.feature "Logged in User" do
       expect(page).to have_button('All Exercises')
       click_on 'All Exercises'
     end
-    # expect(page).to have_link('All Workouts')
+
+    within ".dashboard-display" do
+      expect(page).to have_button("All Exercises")
+      expect(page).to have_button("My Exercises")
+      expect(page).to have_content("Walk")
+    end
   end
 end
