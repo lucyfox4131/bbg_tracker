@@ -15,11 +15,11 @@ RSpec.feature "Logged in User" do
       click_on 'All Exercises'
     end
 
-    within ".dashboard-display" do
-      expect(page).to have_button("All Exercises")
-      expect(page).to have_button("My Exercises")
-      expect(page).to have_content("Walk")
-      expect(page).to have_button("Create New Exercise")
-    end
+    # within ".dashboard-display" do
+    #   expect(page).to have_button("All Exercises")
+    #   expect(page).to have_button("My Exercises")
+    #   expect(page).to have_content("Walk")
+    #   expect(page).to have_button("Create New Exercise")
+    # end
   end
 end
